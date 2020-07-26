@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #515a5a;
+  text-align: center;
+  color: white;
+}
+.jumbotron p {
+  font-size: 18px;
+}
+header {
+  display: inline; /*untuk navbar biar diem*/
+}
+header figure {
+  font-weight: bold;
+  color: #148f77;
+}
+header h2 {
+  color: #148f77;
+}
+nav {
+  position: sticky; /*untuk navbar biar diem*/
+  top: 0; /*untuk navbar biar diem*/
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #148f77;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+nav ul li a:hover {
+  background-color: #515a5a;
+}
+
+nav ul li.icon {
+  display: none;
+}
+main {
+  padding: 20px;
+  overflow: auto;
+}
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #148f77;
+  text-align: center;
+  font-weight: bold;
+}
+.profile header,
+.popular header {
+  text-align: center;
+}
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+.profile img {
+  width: 180px;
+  border-radius: 50%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+#content {
+  float: left;
+  width: 75%;
+}
+aside {
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+}
+.aktif {
+  background-color: #515a5a;
+}
+.cards {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+#contents {
+  margin: auto;
+  width: 75%;
+}
+#contents h1 {
+  text-align: center;
+  color: #148f77;
+}
+#contents h3 {
+  color: #148f77;
+}
+@media screen and (max-width: 1000px) {
+  nav ul li:not(:first-child) {
+    display: none;
+  }
+  nav ul li.icon {
+    float: right;
+    display: inline-block;
+  }
+  #content,
+  aside,
+  #contents {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  nav ul.responsive {
+    position: relative;
+  }
+  nav ul.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  nav ul.responsive li {
+    float: none;
+    display: inline;
+  }
+  nav ul.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  section,
+  section table {
+    text-align: center;
+    margin: auto;
+  }
+}
